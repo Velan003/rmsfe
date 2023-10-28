@@ -74,7 +74,7 @@ function Calculator() {
         }
     
         // creating a new order
-        const result = await axios.post("https://rms-bee.onrender.com/custom_pay",{
+        const result = await axios.post("https://rmsbe1.onrender.com/custom_pay",{
           amount: fare
         });
     
@@ -131,7 +131,7 @@ function Calculator() {
         // If all validations pass, calculate the fare
         const fare = calculateFare();
         alert(`The ticket fare is Rs${fare}`);
-        const response = await axios.post(`https://rms-bee.onrender.com/b/${fare}`, formData);
+        const response = await axios.post(`https://rmsbe1.onrender.com/b/${fare}`, formData);
         await checkoutHandler(fare);
         console.log("ki");
         if (response.data.user) {
