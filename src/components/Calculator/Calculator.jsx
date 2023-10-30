@@ -74,7 +74,7 @@ function Calculator() {
         }
     
         // creating a new order
-        const result = await axios.post("https://rmsbe1.onrender.com/b/custom_pay",{
+        const result = await axios.post("https://rmsbe1.onrender.com/custom_pay",{
           amount: fare
         });
     
